@@ -18,4 +18,13 @@ x = [0:0.01:10];
 y = sin(x)
 g = cos(x)
 
+% First-pair, second-pair 
 plot(x, y, x, g, '.-'), legend('Sin(x)', 'Cos(x)');
+
+% Setting colours on graph
+x = [-10:0.01:10];
+y = 3*x.^4 + 2*x.^3 + 7*x.^2 + x + 9;
+g = 5*x.^3 + 9*x + 2;
+
+% Colours added after pair, using key
+plot(x, y, 'r', x, g, 'g')
