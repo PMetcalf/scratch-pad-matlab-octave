@@ -12,3 +12,10 @@ y = sin(x);
 
 % xlabel, ylabel, title, grid, squaring of axes
 plot(x, y), xlabel('x'), ylabel('Sin(x)'), title('Sin(x) Graph'), grid on, axis equal;
+
+% Drawing Multiple Functions on Same Graph
+x = [0:0.01:10];
+y = sin(x)
+g = cos(x)
+
+plot(x, y, x, g, '.-'), legend('Sin(x)', 'Cos(x)');
